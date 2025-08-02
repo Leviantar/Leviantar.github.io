@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Video de fondo */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+
+/* Menú superior */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  position: relative;
+  z-index: 2;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Barra de búsqueda */
+.search {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Contenedor principal */
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 960px;
+  margin: auto;
+  padding: 40px 30px;
+}
+
+/* Título principal */
+.title {
+  font-size: 56px;
+  line-height: 1.1;
+  font-weight: bold;
+  margin: 60px 0 20px;
+}
+
+/* Botones */
+.actions {
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: #e60012;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin-right: 15px;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn.secondary {
+  background-color: rgb(68, 65, 65);
+  border: 1px solid #aaa;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* Detalles técnicos */
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.details div {
+  min-width: 160px;
+}
+body {
+  
+  color: white; /* ← aquí se define el color general del texto */
+}
+/* ============================ */
+/* 📱 Estilos para móviles     */
+/* ============================ */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .search {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.dimensions {
+  background: url('tu-imagen-de-fondo.jpg') no-repeat center center/cover;
+  padding: 60px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.6); /* fondo negro semitransparente */
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+
+/* VIDEO DE FONDO */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* IMAGEN DE FONDO PARA MÓVILES */
+#bg-image {
+  display: none;
+  background: url("ima/pINJDVS-mitsubishi-evo-9-wallpaper.jpg") no-repeat center center / cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* ESTILOS RESPONSIVOS PARA MÓVIL */
+@media (max-width: 768px) {
+  #bg-video {
+    display: none;
+  }
+
+  #bg-image {
+    display: block;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-top: 3px solid #ff0000;
+  margin-top: 40px;
+}
+
+footer .redes {
+  margin: 10px 0;
+}
+
+footer .redes a {
+  color: #ffffff;
+  margin: 0 10px;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+footer .redes a:hover {
+  color: #2f00ff;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+html {
+  scroll-padding-top: 250px; /* ajusta según la altura de tu nav fijo */
+  scroll-behavior: smooth;  /* para que el desplazamiento sea suave */
+}
+#botonSubir {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background: rgba(255, 0, 0, 0.8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s, transform 0.3s;
+}
+
+#botonSubir:hover {
+  background: #ff0000;
+  transform: scale(1.1);
+}
+
+#botonSubir {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background: rgba(255, 0, 0, 0.8); /* rojo semitransparente */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s, transform 0.3s;
+}
+
+#botonSubir:hover {
+  background: #ff0000;
+  transform: scale(1.1);
+}
