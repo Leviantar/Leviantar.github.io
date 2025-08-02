@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mitsubishi Lancer Evolution</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body><video autoplay muted loop id="bg-video">
+    <source src="ima/evo.mp4" type="video/mp4" />
+    Tu navegador no soporta videos.
+  </video>
+
+  <!-- IMAGEN DE FONDO PARA MÓVILES -->
+  <div id="bg-image"></div>
+</body>
+
+<body>
+  <div class="overlay"></div>
+
+<!-- Botón flotante para subir al inicio -->
+<button id="botonSubir" title="Subir al inicio">↑</button>
+
+<!-- Script para el comportamiento -->
+<script>
+  const boton = document.getElementById("botonSubir");
+
+  window.onscroll = function () {
+    if (document.documentElement.scrollTop > 200) {
+      boton.style.display = "block";
+    } else {
+      boton.style.display = "none";
+    }
+  };
+
+  boton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+
+
+  <nav>
+   <ul class="menu">
+    <li><a href="#historia">Historia</a></li>
+    <li><a href="#caracteristicas">Características</a></li>
+    <li><a href="#fabricantes">Fabricantes</a></li>
+    <li><a href="https://mitsubishi-motors.com.co" target="_blank">Comprar</a></li>
+
+    </ul>
+    <input type="text" placeholder="Search for details" class="search" />
+  </nav>
+
+  <div class="container">
+    <h1 class="title">Mitsubishi<br />Lancer<br />Evolution</h1>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="details">
+      <div><strong>Manufacturer:</strong><br />Mitsubishi Motors</div>
+      <div><strong>Production:</strong><br />1992–2016</div>
+      <div><strong>Engine:</strong><br />2.0 L I4 turbo</div>
+      <div><strong>Review:</strong><br />★★★★☆ 4.2/5</div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section class="dimensions">
+    <div class="content">
+      <section id="historia"></section>
+      <h2>Historia
+      </h2>
+      <p>El Mitsubishi Lancer Evolution, coloquialmente conocido como Evolution o Evo, es un automóvil deportivo
+        compacto de cuatro puertas, producido por el fabricante japonés Mitsubishi Motors desde 1992 hasta 2015.</p>
+      <br>
+      <p>Estaba basado en el mismo monocasco que el Mitsubishi Lancer estándar. Ha tenido diez generaciones donde cada
+        modelo nuevo era diferenciado con un número romano: EVO I, EVO II, etc. Todos comparten motorización con
+        turbocompresor y tracción integral permanente.</p>
+      <br>
+      <p>Las ediciones anteriores a la generación VII, fueron los modelos empleados por Mitsubishi World Rally Team en
+        el Campeonato Mundial de Rally. Este vehículo que era muy utilizado en todas las competiciones de rally en el
+        mundo, competía bajo las normativas del Grupo A, Grupo N y World Rally Car (WRC).</p>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section class="dimensions">
+    <div class="content">
+       <section id="caracteristicas"></section>
+      <h2>Caracter
+        isticas</h2>
+      <p>Se presentó el Lancer Evolution IX en Japón el 3 de marzo de 2005,y expuso el automóvil en el Salón del
+        Automóvil de Ginebra para el mercado europeo el mismo día.</p>
+      <br>
+      <p>Los mercados de América del Norte vieron el modelo expuesto en el Salón del Automóvil de Nueva York el mes
+        siguiente.</p>
+      <br>
+      <p>El motor 4G63 tenía tecnología de sincronización variable de válvulas (MIVEC) y un diseño del turbocompresor
+        revisado que aumenta la potencia en el cigüeñal a 290 CV (286 HP; 213 kW) y el par motor a 40 kg·m (392 N·m; 289
+        lb·pie)</p>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section class="dimensions">
+    <div class="content">
+      <section id="fabricantes"></section>
+      <h2>fabricantes</h2>
+      <p>El fabricante del Mitsubishi Lancer Evolution es Mitsubishi Motors. La producción de este modelo específico,
+        conocido como Evo, se llevó a cabo desde 1992 hasta 2015. El Lancer Evolution fue una versión de alto
+        rendimiento del Mitsubishi Lancer, destacándose por su motor turboalimentado y tracción integral. </p>
+      <br>
+      <p>El Lancer Evolution fue desarrollado y fabricado por Mitsubishi Motors, una empresa japonesa de automóviles.
+        Este modelo fue producido en varias generaciones, cada una identificada con un número romano (Evolution I,
+        Evolution II, etc.)</p>
+      <br>
+      <p>Además de la producción regular, Mitsubishi también lanzó ediciones especiales, como la "Edición Tommi Mäkinen"
+        para conmemorar sus victorias en el WRC. En 2016, se lanzó la última versión, conocida como "Final Edition",
+        marcando el fin de la producción del Lancer Evolution. </p>
+    </div>
+  </section>
+      <footer>
+        <p>Síguenos en redes sociales</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/MitsubishiMotorsColombia/?locale=es_LA" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/mitsubishimotorscolombia" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2025 - Formación Sena</p>
+    </footer>
+    <button id="botonSubir" title="Subir al inicio">↑</button>
+
+
+</body>
+
+
+</html>
